@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/favicons/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>NotDBadGuy</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/859f856037.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--loader-->
+    <div class="loading" id="loading">
+      <div class="loading__box">Loading...</div>
+    </div>
+    <!--Header-->
+    <section id="header">
+      <nav>
+        <a class="top" href="#"
+          ><img src="assets/images/logo.svg" class="logo"
+        /></a>
+        <ul id="navbar">
+          <li><a class="active top" href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><i class="far fa-circle-xmark" id="close"></i></li>
+        </ul>
+        <div id="mobile">
+          <i class="fas fa-bars-staggered" id="bar"></i>
+        </div>
+      </nav>
+    </section>
+    <!--Landing-->
+    <section id="landing">
+      <div class="wrapper">
+        <div class="cols cols0">
+          <h4 class="topline">Digital Product Developer</h4>
+          <h2>Hi, I'm <span class="multiText"></span></h2>
+        </div>
+        <div class="cols cols1">
+          <div class="imgbox">
+            <img src="assets/images/profile-1.png" />
+          </div>
+        </div>
+      </div>
+      <!--Scroll Down-->
+      <div class="scrolldown">
+        <div class="scrolldown__wheel">
+          <div class="scrolldown__wheel--inner"></div>
+        </div>
+        <div class="scrolldown__arrows">
+          <span class="scrolldown__arrow"></span>
+          <span class="scrolldown__arrow"></span>
+          <span class="scrolldown__arrow"></span>
+        </div>
+      </div>
+    </section>
+    <!--About-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/images/aboutprofile.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hey, I'm Goodness Omo-Okoroh, also known as NotDBadGuy on social
+              media. As a digital product developer, I strive to create
+              impactful user experiences through captivating designs. Inspired
+              by music, I infuse rhythm and inspiration into every project.
+              Exploring emerging technologies like Web3 and NFTs, I'm fascinated
+              by their potential for revolutionizing digital art. My passion for
+              creative coding drives me to continuously learn and innovate. I'm
+              committed to delivering exceptional results by crafting seamless
+              interfaces and optimizing user experiences.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.figma.com/proto/DCzCCQOVkvubCLRzAASHoI/Resume?type=design&node-id=1-2&t=1XCWUx7uCE3pGbrk-1&scaling=min-zoom&page-id=0%3A1&mode=design"
+              class="cv"
+              ><i class="fas fa-arrow-down"></i>curriculum vitae</a
+            >
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('skills', event)"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience', event)">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education', event)">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li>
+                  <span>Web Development</span><br />Crafting Engaging Online
+                  Experiences
+                </li>
+                <li>
+                  <span>Flutter Development</span><br />Building Beautiful
+                  Cross-Platform Apps
+                </li>
+                <li>
+                  <span>Blockchain Development</span><br />Building smart
+                  contracts, DApps, and NFTs
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>May 2020 - Present</span><br />Freelance UX/UI Designer
+                  and Web Developer
+                </li>
+                <li>
+                  <span>October 2022 - January 2023</span><br />
+                  Flutter Developer at Renewed GenZ
+                </li>
+                <li>
+                  <span>March 2020 - Feburary 2022</span><br />
+                  Graphic Designer at Torsney.art
+                </li>
+                <li>
+                  <span>July 2020 - September 2021</span><br />
+                  React.js Developer Intern at InfoByte Tech
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2017-2023</span><br />B.Sc. Computer Science <br />
+                  Lagos State University
+                </li>
+                <li>
+                  <span>2022-2023</span><br />Mobile Development (Flutter)
+                  Bootcamp <br />
+                  DsiHub, Delta State
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Skills-->
+    <section id="skills">
+      <div class="container">
+        <h1 class="sub-title">Skills and Proficiencies</h1>
+        <div class="skills-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              As a Web designer, I possess a strong skill set in web design,
+              blending creativity and technical expertise to deliver visually
+              appealing and user-friendly websites. With a keen eye for
+              aesthetics and a deep understanding of user experience, I excel in
+              creating engaging digital experiences. Using industry-standard
+              design tools, I transform ideas into compelling visual designs,
+              employing wireframing, responsive layouts, and color theory. I
+              prioritize seamless functionality across devices and stay updated
+              on design trends, ensuring modern and innovative web designs.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              As a UI/UX designer, I specialize in crafting exceptional user
+              experiences that captivate and delight. With a deep understanding
+              of user behavior and a keen eye for aesthetics, I create visually
+              stunning and intuitive interfaces. Through meticulous research and
+              user-centric design principles, I ensure seamless interaction and
+              effortless navigation. From wireframing to prototyping, I bring
+              ideas to life, incorporating user feedback to refine and improve
+              designs. By combining creativity, empathy, and technical
+              expertise, I strive to create meaningful and impactful experiences
+              that leave a lasting impression.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-mobile"></i>
+            <h2>Flutter Development</h2>
+            <p>
+              As a Flutter developer, I specialize in crafting cross-platform
+              applications that are both beautiful and functional. With
+              expertise in Flutter's framework and Dart programming language, I
+              bring ideas to life with fluid user interfaces and seamless
+              experiences. From designing interactive layouts to integrating
+              APIs, I thrive in creating feature-rich apps that run smoothly on
+              both iOS and Android platforms. With a passion for clean code and
+              attention to detail, I strive to deliver high-quality and
+              performant Flutter applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Portfolio-->
+    <section id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Portfolio Showcase</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="assets/images/work3.png" width="100%" />
+            <div class="layer">
+              <h3>TATAFO</h3>
+              <p>
+                Introducing "Tatafo" your friendly news app that keeps you in
+                the know. Dive into a world of curated news articles, trending
+                stories, and captivating headlines. Stay informed, entertained,
+                and engaged with personalized news tailored just for you.
+                Experience news like never before with "Tatafo"
+              </p>
+              <a
+                href="https://www.figma.com/proto/ysEH37M19o2vTigUK7LuZC/TATAFO?page-id=8%3A92&type=design&node-id=29-109&viewport=919%2C468%2C0.13&t=eJII95c9LmVn08Vw-1&scaling=scale-down&starting-point-node-id=11%3A2&mode=design"
+                target="_blank"
+                ><i class="fas fa-link"></i>Mobile</a
+              >
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/images/work1.png" width="101%" />
+            <div class="layer">
+              <h3>Renewed Gen Z</h3>
+              <p>
+                Introducing "Renewed GenZ" a vibrant blog that navigates the
+                exhilarating journey of teenhood while serving as a safe haven
+                for Teens. This design embodies a warm and friendly atmosphere,
+                creating a space where young minds can find support,
+                inspiration, and genuine connections.
+              </p>
+              <a
+                href="https://www.figma.com/proto/CWWNsvF7M9yjirtz1Ha2Ps/Renewed-GenZ?page-id=0%3A1&node-id=5-328&starting-point-node-id=1%3A2&scaling=scale-down&mode=design&t=JjmKdHAJwxDRSQuH-1"
+                target="_blank"
+                ><i class="fas fa-link"></i>Web</a
+              >
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/images/work2.png" width="97.5%" />
+            <div class="layer">
+              <h3>Goal Legacy NFT</h3>
+              <p>
+                Introducing "Goal Legacy" a game-changing design that brings
+                football into the Web 3.0 era. Immerse yourself in simulated
+                matches, connect with fans worldwide, and explore personalized
+                tournaments. Collect your cards, earn rewards, and dive into the
+                world of football like never before.
+              </p>
+              <a
+                href="https://www.figma.com/proto/vfSGwdolkndUqGKTjh4Ujs/GoalLegacy?page-id=0%3A1&type=design&node-id=1-2&viewport=137%2C192%2C0.08&t=aevWZ5TLZTSemOsi-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design"
+                target="_blank"
+                ><i class="fas fa-link"></i>Web</a
+              >
+              <a
+                href="https://www.figma.com/proto/vfSGwdolkndUqGKTjh4Ujs/GoalLegacy?page-id=6%3A23&node-id=95-681&starting-point-node-id=6%3A24&scaling=contain&mode=design&t=rGn0yMfhccGSrDOz-1"
+                target="_blank"
+                ><i class="fas fa-link"></i>Mobile</a
+              >
+            </div>
+          </div>
+        </div>
+        <a href="showcase.html" class="btn">See More</a>
+      </div>
+    </section>
+    <!--Contact-->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="far fa-paper-plane"></i>reachout@notdbadguy.xyz</p>
+            <div class="social-icons">
+              <a href="https://twitter.com/notdbadguy" target="_blank"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+              <a href="https://dribbble.com/Notdbadguy" target="_blank"
+                ><i class="fab fa-dribbble-square"></i
+              ></a>
+              <a href="https://wa.me/message/TMURDPOQCQUQB1" target="_blank"
+                ><i class="fab fa-whatsapp-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; Goodness Omo-Okoroh. Made with ❤️ by NotDBadGuy</p>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
